@@ -1,0 +1,625 @@
+/***** GENERAL *****/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lato','Arial', 'sans-serif';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    padding: 65px 0 80px 0;
+}
+
+section .heading{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+section .heading h2{
+    text-transform: uppercase;
+}
+
+.divider{
+    width: 200px;
+    height: 2px;
+    background-color: #202c68;
+    margin: 0 auto 20px;
+}
+
+.divider.white{
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+/***** NAVBAR *****/
+
+.navbar{
+    /*background-color: #FF924D;*/
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-link{
+    color: white !important;
+    margin: 0 6px;
+}
+
+.nav-link.active, .nav-link:hover{
+    background-color: #FF924D;
+}
+
+/***** ABOUT *****/
+#about{
+    background-color: #FF924D;
+}
+
+.profile-picture{
+    text-align: center;
+    margin: 0px auto 30px;
+}
+
+#about .heading h1{
+    color: #202c68;
+    text-transform: uppercase;
+}
+
+#about .heading h3{
+    color: white;
+}
+
+.button{
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 18px 50px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.button:hover{
+    background: white;
+    color: #202c68;
+}
+
+
+
+/***** SKILLS *****/
+
+#skills .heading h2{
+    color: #202c68;
+    margin-top: 15px;
+}
+
+#skills .progress{
+    height: 45px;
+    margin: 30px 20px;
+}
+
+#skills .progress:last-child{
+    margin-bottom: 0px;
+}
+
+#skills .progress-bar{
+    background-color: #202c68;
+}
+
+#skills .progress-bar h5{
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 3px;
+}
+
+#skills .divider-skills{
+    width: 200px;
+    height: 2px;
+    background-color: #202c68;
+    margin: 65px auto 20px;
+}
+
+
+/***** SKILLS CARDS *****/
+
+.skill-card {
+    border: 2px solid #202c68;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card .skill-card-title {
+    color: #202c68;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-card .skill-card-title i {
+    color: #FF924D;
+    font-size: 1.5rem;
+}
+
+.skill-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.skill-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.skill-list li:before {
+    content: "•";
+    color: #FF924D;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.skill-badge {
+    background-color: #FF924D;
+    color: white;
+    padding: 0.35rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/***** EXPERIENCES *****/
+
+#experience{
+    background-color: #FF924D;
+}
+
+#experience .heading h2{
+    color:white;
+    margin: 15px 0;
+}
+
+.timeline{
+    padding: 30px 10px;
+    position: relative;
+}
+
+.timeline:before{
+    content: " ";
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 5px;
+    background-color: #333;
+    left: 50%;
+    margin-left: -2,5px;
+}
+
+.timeline > li{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline > li:before, .timeline > li:after{
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after{
+    clear:both;
+}
+
+.timeline li .timeline-badge{
+    color:#FF924D;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -23px; /*25*/
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.timeline-panel-container{
+    width: 50%;
+    float: sleft;
+}
+
+.timeline-panel-container-inverted{
+    width: 50%;
+    float: right;
+}
+
+.timeline-panel{
+    width: 90%;
+    float: right;
+    margin-right: 37px; /*40*/
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
+    background: #fff;
+}
+
+.timeline-panel-container-inverted .timeline-panel{
+    float: left;
+    margin-left: 40px;
+}
+
+.timeline-panel:after{
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline-panel-container-inverted .timeline-panel:after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-heading h3{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.timeline-heading h4{
+    color:#202c68;
+}
+
+
+
+/***** EDUCATION *****/
+
+#education .heading h2{
+    color: #202c68;
+    margin: 15px 0;
+}
+
+.education-block{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: #e9ecef;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.education-block h5{
+    color:#202c68;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.education-block span{
+    font-size: 35px;
+}
+
+.education-block h3{
+    color: #202c68;
+    margin: 15px 0px;
+}
+
+.education-block h4{
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.buttonE{
+    color: #202c68;
+    text-transform: uppercase;
+    border: 1px solid #202c68;
+    padding: 12px 50px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.buttonE:hover{
+    background: white;
+    color: #202c68;
+}
+
+.buttonE-inactive {
+    color: #999; /* Couleur atténuée */
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    padding: 12px 50px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    pointer-events: none; /* Désactive le clic */
+    cursor: default;
+    opacity: 0.6;
+}
+
+/***** DETAILS *****/
+#details {
+    background-color: #FF924D;
+    overflow: hidden;
+}
+
+#details .heading{
+    margin-bottom: -60px;
+}
+
+#aboutCarousel {
+    height: 60vh;
+    min-height: 400px;
+    margin: 2rem 0;
+}
+
+.carousel-inner{
+    height:100%;
+}
+
+.carousel-item {
+    height: 100%;
+    padding: 2rem 0;
+    transition: transform 0.6s ease-in-out !important;
+}
+
+.carousel-item .row {
+    height: 100%;
+    align-items: center;
+}
+
+.carousel-text {
+    overflow-y: auto;
+    max-height: 70vh;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* Styles pour la liste à puces */
+.carousel-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.carousel-text li {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.carousel-text li:before {
+    content: "✔";
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: -0.1em;
+}
+
+.bg-light-opacity {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.lead {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.carousel-indicators {
+    margin-bottom: -2rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 40px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+    transform: scaleX(1.2);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/*Slide 3*/
+/* Style desktop */
+.aviq-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.aviq-list li {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.aviq-list li:before {
+    content: "➤";
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.aviq-list a {
+    color: #fff;
+    text-decoration: underline;
+    transition: opacity 0.3s;
+}
+
+.aviq-list a:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+/* Style mobile */
+.aviq-links-mobile a {
+    color: #fff !important;
+    text-decoration: none;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.aviq-links-mobile a:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+    #aboutCarousel {
+        height: auto;
+        min-height: 370px;
+    }
+    
+    .carousel-text {
+        font-size: 0.95rem;
+        max-height: none; /*50vh*/
+        padding: 1rem;
+    }
+
+    .carousel-item{
+        padding: 1rem 0;
+    }
+    
+    .carousel-text li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+    
+    .bg-light-opacity {
+        padding: 1rem;
+    }
+
+    .aviq-list li {
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .aviq-list li:before {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .carousel-text {
+        max-height: 55vh;
+        padding: 2rem !important;
+    }
+
+    .display-5{
+        min-height: 3rem;
+    }
+    
+    .carousel-text ul {
+        font-size: 1.1rem;
+    }
+}
+
+
+/***** FOOTER *****/
+footer{
+    background-color: #333;
+    padding: 20px 0 40px;
+}
+
+footer span{
+    color:#FF924D;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+footer span:hover{
+    color:#FF924D;
+    font-size: 30px;
+}
+
+footer h5{
+    color:white;
+    font-weight: normal;
+}
